@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+  }
+  
+html, body {
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+   }
+
+.ba-header{
+    position: absolute;
+    width: 100%;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ba-header-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5.5vh;
+}
+
+.ba-header a{
+    color: #fff;
+    text-decoration: none;
+    font-family: lato;
+    font-weight: bold;
+}
+
+.ba-menu{
+    display: flex;
+    align-items: center;/*работает и без свойства*/
+    justify-content: space-between;/*работает и без свойства*/
+    list-style: none;
+}
+
+.ba-menu__item+.ba-menu__item::before{
+    content: "/";
+    font-size: 1.4rem;
+    color:#616a72;
+    margin: 0 4vw;
+}
+
+main{
+    min-height: 100vh;
+}
+.ba-hero{
+    min-height: 100vh;
+    background-image: url(../img/computer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.ba-hero .container {
+    padding-top: 44vh;
+    
+}
+
+.ba-hero__title {
+    font-family: bigjohn;
+    font-size: 2.875rem;
+    margin: 0;
+    margin-bottom: 4vh;
+}
+
+.ba-hero__desc {
+    font-family: slimjoe;
+    font-size: 1.875rem;
+    margin: 0;
+}
+
+.ba-btn{
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid #48bf72;
+    border-radius: 3px;
+    padding: 0 1.4285em;
+    color: #48bf72;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-family: lato;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 7vh;
+}
